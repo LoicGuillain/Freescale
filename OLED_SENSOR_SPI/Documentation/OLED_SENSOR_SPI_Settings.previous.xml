@@ -1,0 +1,2716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PE_PROJECT_SETTINGS_DOCUMENTATION>
+  <PE_product_version v="version 10.4 for Freescale Microcontrollers" />
+  <PE_core_version v="Processor Expert Version 0509" />
+  <CPU_Bean name="Cpu" type="MK64FN1M0LQ12">
+    <Enabled v="N" />
+    <Properties>
+      <Component_name v="Cpu" />
+      <CPU_type v="MK64FN1M0VLQ12" />
+      <list name="Shared Internal properties" v="1">
+        <EmptySection_DummyValue />
+      </list>
+      <list name="Shared Clock settings" v="1">
+        <group name="Clock settings">
+          <group name="Clock sources">
+            <group name="Internal oscillator">
+              <Slow_internal_reference_clock__kHz_ v="32.768000000000" />
+              <boolgroup name="Initialize slow trim value" v="no" />
+              <Fast_internal_reference_clock__MHz_ v="4" />
+              <boolgroup name="Initialize fast trim value" v="no" />
+            </group>
+            <boolgroup name="RTC oscillator" v="Disabled" />
+            <boolgroup name="System oscillator 0" v="Disabled" />
+          </group>
+          <list name="Clock source settings" v="1">
+            <group name="Clock source setting 0">
+              <group name="Internal reference clock">
+                <MCGIRCLK_clock v="Enabled" />
+                <MCGIRCLK_in_stop v="Disabled" />
+                <enumgroup name="MCGIRCLK source" v="Slow">
+                  <EmptySection_DummyValue />
+                </enumgroup>
+                <MCGIRCLK_clock__MHz_ v="0.032768000000" />
+              </group>
+              <group name="External reference clock">
+                <OSC0ERCLK_clock v="Enabled" />
+                <OSC0ERCLK_in_stop v="Disabled" />
+                <OSC0ERCLK_clock__MHz_ v="0" />
+                <ERCLK32K_clock_source v="Auto select" />
+                <ERCLK32K__clock__kHz_ v="0.001000000000" />
+              </group>
+              <group name="MCG settings">
+                <enumgroup name="MCG mode" v="FEI">
+                  <EmptySection_DummyValue />
+                </enumgroup>
+                <MCG_output_clock v="FLL clock" />
+                <MCG_output__MHz_ v="20.971520000000" />
+                <MCG_external_ref__clock_source v="System oscillator 0" />
+                <MCG_external_ref__clock__MHz_ v="0" />
+                <Clock_monitor v="Disabled" />
+                <group name="FLL settings">
+                  <FLL_module v="Disabled" />
+                  <FLL_output__MHz_ v="20.971520000000" />
+                  <MCGFFCLK_clock__kHz_ v="32.768000000000" />
+                  <enumgroup name="Reference clock source" v="Slow internal clock">
+                    <EmptySection_DummyValue />
+                  </enumgroup>
+                  <FLL_reference_clock__kHz_ v="32.768000000000" />
+                  <Multiplication_factor v="Auto select" />
+                </group>
+                <group name="PLL 0 settings">
+                  <PLL_module v="Disabled" />
+                  <PLL_module_in_Stop v="Disabled" />
+                  <PLL_output__MHz_ v="100" />
+                  <Reference_clock_divider v="Auto select" />
+                  <PLL_reference_clock__MHz_ v="1" />
+                  <Multiplication_factor v="Auto select" />
+                  <Loss_of_lock_interrupt v="Disabled" />
+                </group>
+              </group>
+            </group>
+          </list>
+          <list name="Clock configurations" v="1">
+            <group name="Clock configuration 0">
+              <boolgroup name="Very low power mode" v="Disabled" />
+              <enumgroup name="Clock source setting" v="configuration 0">
+                <MCG_mode v="FEI" />
+                <MCG_output__MHz_ v="20.971520000000" />
+                <MCGIRCLK_clock__MHz_ v="0.032768" />
+                <OSCERCLK_clock__MHz_ v="0" />
+                <ERCLK32K__clock__kHz_ v="0.001" />
+                <MCGFFCLK__kHz_ v="32.768" />
+              </enumgroup>
+              <group name="System clocks">
+                <Core_clock_prescaler v="Auto select" />
+                <Core_clock v="20.971520000000" />
+                <Bus_clock_prescaler v="Auto select" />
+                <Bus_clock v="20.971520000000" />
+                <External_clock_prescaler v="Auto select" />
+                <External_bus_clock v="10.485760000000" />
+                <Flash_clock_prescaler v="Auto select" />
+                <Flash_clock v="10.485760000000" />
+                <enumgroup name="PLL/FLL clock selection" v="Auto select">
+                  <Clock_frequency__MHz_ v="20.971520000000" />
+                </enumgroup>
+              </group>
+            </group>
+          </list>
+        </group>
+      </list>
+      <group name="Low power mode settings">
+        <list name="Shared Low Power Settings" v="1">
+          <group name="Allowed power modes">
+            <Very_low_power_modes v="Not allowed" />
+            <Low_leakage_stop_mode v="Not allowed" />
+            <Very_low_leakage_stop_mode v="Not allowed" />
+          </group>
+        </list>
+        <list name="Shared Low Power Settings" v="1">
+          <group name="Operation mode settings">
+            <group name="WAIT operation mode">
+              <Return_to_wait_after_ISR v="no" />
+            </group>
+            <group name="SLEEP operation mode">
+              <Return_to_stop_after_ISR v="no" />
+            </group>
+            <boolgroup name="STOP operation mode" v="Disabled" />
+          </group>
+        </list>
+      </group>
+      <group name="Common settings">
+        <Initialization_priority v="minimal priority" />
+        <Watchdog_disable v="yes" />
+        <Utilize_after_reset_values v="default" />
+        <list name="Shared NMI settings" v="1">
+          <boolgroup name="NMI pin" v="Enabled">
+            <NMI_Pin v="PTA4/LLWU_P3/FTM0_CH1/NMI_b/EZP_CS_b" />
+          </boolgroup>
+        </list>
+        <list name="Shared Reset settings" v="1">
+          <boolgroup name="Reset pin" v="Enabled">
+            <Reset_Pin v="RESET_b" />
+          </boolgroup>
+        </list>
+        <list name="Shared JTAG settings" v="1">
+          <group name="Debug interface (JTAG)">
+            <enumgroup name="JTAG Mode" v="JTAG">
+              <boolgroup name="TDI" v="Enabled">
+                <TDI_Pin v="PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI" />
+              </boolgroup>
+              <boolgroup name="TDO" v="Enabled">
+                <TDO_Pin v="PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO" />
+              </boolgroup>
+              <boolgroup name="TCK" v="Enabled">
+                <TCK_Pin v="PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK" />
+              </boolgroup>
+              <boolgroup name="TMS" v="Enabled">
+                <TMS_Pin v="PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO" />
+              </boolgroup>
+              <boolgroup name="nTRST" v="Disabled" />
+            </enumgroup>
+          </group>
+        </list>
+        <list name="Shared Flash memory organization" v="1">
+          <group name="Flash memory organization">
+            <list name="Shared FLASH settings" v="1">
+              <EmptySection_DummyValue />
+            </list>
+            <list name="Flash blocks" v="2">
+              <group name="Flash block 0">
+                <Address v="0" />
+                <Size v="524288" />
+                <Write_unit_size v="8" />
+                <Erase_unit_size v="4096" />
+                <Protection_unit_size v="32768" />
+              </group>
+              <group name="Flash block 1">
+                <Address v="524288" />
+                <Size v="524288" />
+                <Write_unit_size v="8" />
+                <Erase_unit_size v="4096" />
+                <Protection_unit_size v="32768" />
+              </group>
+            </list>
+          </group>
+        </list>
+        <list name="Shared Flash Config settings" v="1">
+          <boolgroup name="Flash configuration field" v="Disabled" />
+        </list>
+      </group>
+      <list name="Shared CPU interrupts/resets" v="1">
+        <group name="CPU interrupts/resets">
+          <boolgroup name="Non-maskable interrupt" v="Enabled">
+            <Interrupt v="INT_NMI" />
+          </boolgroup>
+          <boolgroup name="Hard fault" v="Disabled" />
+          <boolgroup name="Supervisor call" v="Disabled" />
+          <boolgroup name="Pendable service" v="Disabled" />
+          <boolgroup name="MCG Loss of lock" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+    <Methods>
+      <list name="CPUCond" v="1">
+        <SetClockConfiguration v="don&amp;apos;t generate code" />
+        <GetClockConfiguration v="don&amp;apos;t generate code" />
+        <SetOperationMode v="don&amp;apos;t generate code" />
+        <EnableInt v="don&amp;apos;t generate code" />
+        <DisableInt v="don&amp;apos;t generate code" />
+        <OpenBackDoor v="don&amp;apos;t generate code" />
+        <MCGAutoTrim v="don&amp;apos;t generate code" />
+        <VLPModeEnable v="don&amp;apos;t generate code" />
+        <VLPModeDisable v="don&amp;apos;t generate code" />
+        <SystemReset v="don&amp;apos;t generate code" />
+      </list>
+    </Methods>
+    <Events>
+      <Event_module_name v="Events" />
+      <list name="EvntsShrdGrp" v="1">
+        <event name="OnReset" v="don&amp;apos;t generate code" />
+        <event name="OnNMI" v="generate code">
+          <Event_procedure_name v="Cpu_OnNMI" />
+        </event>
+        <event name="OnHardFault" v="don&amp;apos;t generate code" />
+        <event name="OnSupervisorCall" v="don&amp;apos;t generate code" />
+        <event name="OnPendableService" v="don&amp;apos;t generate code" />
+        <event name="OnLossOfLock" v="don&amp;apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="GNU C Compiler" />
+    <CompilerProperties>
+      <Compiler v="GNU C Compiler" />
+      <enumgroup name="Unhandled vectors" v="One handler for all">
+        <Unhandled_int_code>
+          <StrgList><![CDATA[/* This code can be changed using the CPU component property "Build Options / Unhandled int code" */
+PE_DEBUGHALT();
+]]></StrgList>
+        </Unhandled_int_code>
+      </enumgroup>
+      <boolgroup name="Generate debugger files" v="yes">
+        <Generate_mem_file v="yes" />
+      </boolgroup>
+      <group name="Startup">
+        <Add_startup_file v="yes" />
+      </group>
+      <boolgroup name="Generate linker file" v="yes">
+        <Stack_size v="1024" />
+        <Heap_size v="0" />
+        <Set_memory_segments_to_default v="Click to set default &amp;gt;" />
+        <Default_memory_for_interrupts v="INTERNAL RAM" />
+        <Default_memory_for_code v="INTERNAL RAM" />
+        <Default_memory_for_data v="INTERNAL RAM" />
+        <list name="ROM/RAM Areas" v="5">
+          <group name="MemoryArea0">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_interrupts" />
+              <Qualifier v="RX" />
+              <Address v="0" />
+              <Size v="408" />
+            </boolgroup>
+          </group>
+          <group name="MemoryArea1">
+            <boolgroup name="ROM/RAM Area" v="Disabled" />
+          </group>
+          <group name="MemoryArea2">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_text" />
+              <Qualifier v="RX" />
+              <Address v="1040" />
+              <Size v="1047536" />
+            </boolgroup>
+          </group>
+          <group name="MemoryArea3">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_data_1FFF0000" />
+              <Qualifier v="RW" />
+              <Address v="536805376" />
+              <Size v="65536" />
+            </boolgroup>
+          </group>
+          <group name="MemoryArea4">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_data" />
+              <Qualifier v="RW" />
+              <Address v="536870912" />
+              <Size v="196608" />
+            </boolgroup>
+          </group>
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+  <CPU_Bean name="Cpu" type="MK64FN1M0LQ12">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Cpu" />
+      <CPU_type v="MK64FN1M0VLQ12" />
+      <list name="Shared Internal properties" v="1">
+        <EmptySection_DummyValue />
+      </list>
+      <list name="Shared Clock settings" v="1">
+        <group name="Clock settings">
+          <group name="Clock sources">
+            <group name="Internal oscillator">
+              <Slow_internal_reference_clock__kHz_ v="32.768000000000" />
+              <boolgroup name="Initialize slow trim value" v="no" />
+              <Fast_internal_reference_clock__MHz_ v="4" />
+              <boolgroup name="Initialize fast trim value" v="no" />
+            </group>
+            <boolgroup name="RTC oscillator" v="Disabled" />
+            <boolgroup name="System oscillator 0" v="Disabled" />
+          </group>
+          <list name="Clock source settings" v="1">
+            <group name="Clock source setting 0">
+              <group name="Internal reference clock">
+                <MCGIRCLK_clock v="Enabled" />
+                <MCGIRCLK_in_stop v="Disabled" />
+                <enumgroup name="MCGIRCLK source" v="Slow">
+                  <EmptySection_DummyValue />
+                </enumgroup>
+                <MCGIRCLK_clock__MHz_ v="0.032768000000" />
+              </group>
+              <group name="External reference clock">
+                <OSC0ERCLK_clock v="Enabled" />
+                <OSC0ERCLK_in_stop v="Disabled" />
+                <OSC0ERCLK_clock__MHz_ v="0" />
+                <ERCLK32K_clock_source v="Auto select" />
+                <ERCLK32K__clock__kHz_ v="0.001000000000" />
+              </group>
+              <group name="MCG settings">
+                <enumgroup name="MCG mode" v="FEI">
+                  <EmptySection_DummyValue />
+                </enumgroup>
+                <MCG_output_clock v="FLL clock" />
+                <MCG_output__MHz_ v="20.971520000000" />
+                <MCG_external_ref__clock_source v="System oscillator 0" />
+                <MCG_external_ref__clock__MHz_ v="0" />
+                <Clock_monitor v="Disabled" />
+                <group name="FLL settings">
+                  <FLL_module v="Enabled" />
+                  <FLL_output__MHz_ v="20.971520000000" />
+                  <MCGFFCLK_clock__kHz_ v="32.768000000000" />
+                  <enumgroup name="Reference clock source" v="Slow internal clock">
+                    <EmptySection_DummyValue />
+                  </enumgroup>
+                  <FLL_reference_clock__kHz_ v="32.768000000000" />
+                  <Multiplication_factor v="Auto select" />
+                </group>
+                <group name="PLL 0 settings">
+                  <PLL_module v="Disabled" />
+                  <PLL_module_in_Stop v="Disabled" />
+                  <PLL_output__MHz_ v="0" />
+                  <Reference_clock_divider v="Auto select" />
+                  <PLL_reference_clock__MHz_ v="1" />
+                  <Multiplication_factor v="Auto select" />
+                  <Loss_of_lock_interrupt v="Disabled" />
+                </group>
+              </group>
+            </group>
+          </list>
+          <list name="Clock configurations" v="1">
+            <group name="Clock configuration 0">
+              <boolgroup name="Very low power mode" v="Disabled" />
+              <enumgroup name="Clock source setting" v="configuration 0">
+                <MCG_mode v="FEI" />
+                <MCG_output__MHz_ v="20.971520000000" />
+                <MCGIRCLK_clock__MHz_ v="0.032768" />
+                <OSCERCLK_clock__MHz_ v="0" />
+                <ERCLK32K__clock__kHz_ v="0.001" />
+                <MCGFFCLK__kHz_ v="32.768" />
+              </enumgroup>
+              <group name="System clocks">
+                <Core_clock_prescaler v="Auto select" />
+                <Core_clock v="20.971520000000" />
+                <Bus_clock_prescaler v="Auto select" />
+                <Bus_clock v="20.971520000000" />
+                <External_clock_prescaler v="Auto select" />
+                <External_bus_clock v="10.485760000000" />
+                <Flash_clock_prescaler v="Auto select" />
+                <Flash_clock v="10.485760000000" />
+                <enumgroup name="PLL/FLL clock selection" v="Auto select">
+                  <Clock_frequency__MHz_ v="20.971520000000" />
+                </enumgroup>
+              </group>
+            </group>
+          </list>
+        </group>
+      </list>
+      <group name="Low power mode settings">
+        <list name="Shared Low Power Settings" v="1">
+          <group name="Allowed power modes">
+            <Very_low_power_modes v="Not allowed" />
+            <Low_leakage_stop_mode v="Not allowed" />
+            <Very_low_leakage_stop_mode v="Not allowed" />
+          </group>
+        </list>
+        <list name="Shared Low Power Settings" v="1">
+          <group name="Operation mode settings">
+            <group name="WAIT operation mode">
+              <Return_to_wait_after_ISR v="no" />
+            </group>
+            <group name="SLEEP operation mode">
+              <Return_to_stop_after_ISR v="no" />
+            </group>
+            <boolgroup name="STOP operation mode" v="Disabled" />
+          </group>
+        </list>
+      </group>
+      <group name="Common settings">
+        <Initialization_priority v="minimal priority" />
+        <Watchdog_disable v="yes" />
+        <Utilize_after_reset_values v="default" />
+        <list name="Shared NMI settings" v="1">
+          <boolgroup name="NMI pin" v="Enabled">
+            <NMI_Pin v="PTA4/LLWU_P3/FTM0_CH1/NMI_b/EZP_CS_b" />
+          </boolgroup>
+        </list>
+        <list name="Shared Reset settings" v="1">
+          <boolgroup name="Reset pin" v="Enabled">
+            <Reset_Pin v="RESET_b" />
+          </boolgroup>
+        </list>
+        <list name="Shared JTAG settings" v="1">
+          <group name="Debug interface (JTAG)">
+            <enumgroup name="JTAG Mode" v="JTAG">
+              <boolgroup name="TDI" v="Enabled">
+                <TDI_Pin v="PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI" />
+              </boolgroup>
+              <boolgroup name="TDO" v="Enabled">
+                <TDO_Pin v="PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO" />
+              </boolgroup>
+              <boolgroup name="TCK" v="Enabled">
+                <TCK_Pin v="PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK" />
+              </boolgroup>
+              <boolgroup name="TMS" v="Enabled">
+                <TMS_Pin v="PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO" />
+              </boolgroup>
+              <boolgroup name="nTRST" v="Disabled" />
+            </enumgroup>
+          </group>
+        </list>
+        <list name="Shared Flash memory organization" v="1">
+          <group name="Flash memory organization">
+            <list name="Shared FLASH settings" v="1">
+              <EmptySection_DummyValue />
+            </list>
+            <list name="Flash blocks" v="2">
+              <group name="Flash block 0">
+                <Address v="0" />
+                <Size v="524288" />
+                <Write_unit_size v="8" />
+                <Erase_unit_size v="4096" />
+                <Protection_unit_size v="32768" />
+              </group>
+              <group name="Flash block 1">
+                <Address v="524288" />
+                <Size v="524288" />
+                <Write_unit_size v="8" />
+                <Erase_unit_size v="4096" />
+                <Protection_unit_size v="32768" />
+              </group>
+            </list>
+          </group>
+        </list>
+        <list name="Shared Flash Config settings" v="1">
+          <boolgroup name="Flash configuration field" v="Enabled">
+            <group name="Security settings">
+              <boolgroup name="Flash security" v="Disabled" />
+              <Freescale_failure_analysis_access v="Enabled" />
+              <Mass_erase v="Enabled" />
+              <Backdoor_key_security v="Disabled" />
+              <Backdoor_key_0 v="255" />
+              <Backdoor_key_1 v="255" />
+              <Backdoor_key_2 v="255" />
+              <Backdoor_key_3 v="255" />
+              <Backdoor_key_4 v="255" />
+              <Backdoor_key_5 v="255" />
+              <Backdoor_key_6 v="255" />
+              <Backdoor_key_7 v="255" />
+            </group>
+            <group name="Protection regions">
+              <group name="P-Flash protection settings">
+                <Protection_region_size v="32768" />
+                <P_Flash_protection v="4294967295" />
+                <group name="Protection regions">
+                  <Protection_region_0 v="Unprotected" />
+                  <Protection_region_1 v="Unprotected" />
+                  <Protection_region_2 v="Unprotected" />
+                  <Protection_region_3 v="Unprotected" />
+                  <Protection_region_4 v="Unprotected" />
+                  <Protection_region_5 v="Unprotected" />
+                  <Protection_region_6 v="Unprotected" />
+                  <Protection_region_7 v="Unprotected" />
+                  <Protection_region_8 v="Unprotected" />
+                  <Protection_region_9 v="Unprotected" />
+                  <Protection_region_10 v="Unprotected" />
+                  <Protection_region_11 v="Unprotected" />
+                  <Protection_region_12 v="Unprotected" />
+                  <Protection_region_13 v="Unprotected" />
+                  <Protection_region_14 v="Unprotected" />
+                  <Protection_region_15 v="Unprotected" />
+                  <Protection_region_16 v="Unprotected" />
+                  <Protection_region_17 v="Unprotected" />
+                  <Protection_region_18 v="Unprotected" />
+                  <Protection_region_19 v="Unprotected" />
+                  <Protection_region_20 v="Unprotected" />
+                  <Protection_region_21 v="Unprotected" />
+                  <Protection_region_22 v="Unprotected" />
+                  <Protection_region_23 v="Unprotected" />
+                  <Protection_region_24 v="Unprotected" />
+                  <Protection_region_25 v="Unprotected" />
+                  <Protection_region_26 v="Unprotected" />
+                  <Protection_region_27 v="Unprotected" />
+                  <Protection_region_28 v="Unprotected" />
+                  <Protection_region_29 v="Unprotected" />
+                  <Protection_region_30 v="Unprotected" />
+                  <Protection_region_31 v="Unprotected" />
+                </group>
+              </group>
+              <group name="D-Flash protection settings">
+                <Protection_region_size v="" />
+                <D_Flash_protection v="255" />
+                <group name="Protection regions">
+                  <Protection_region_0 v="Unprotected" />
+                  <Protection_region_1 v="Unprotected" />
+                  <Protection_region_2 v="Unprotected" />
+                  <Protection_region_3 v="Unprotected" />
+                  <Protection_region_4 v="Unprotected" />
+                  <Protection_region_5 v="Unprotected" />
+                  <Protection_region_6 v="Unprotected" />
+                  <Protection_region_7 v="Unprotected" />
+                </group>
+              </group>
+              <group name="Eeprom protection settings">
+                <Protection_region_size v="" />
+                <Eeprom_protection v="255" />
+                <group name="Protection regions">
+                  <Protection_region_0 v="Unprotected" />
+                  <Protection_region_1 v="Unprotected" />
+                  <Protection_region_2 v="Unprotected" />
+                  <Protection_region_3 v="Unprotected" />
+                  <Protection_region_4 v="Unprotected" />
+                  <Protection_region_5 v="Unprotected" />
+                  <Protection_region_6 v="Unprotected" />
+                  <Protection_region_7 v="Unprotected" />
+                </group>
+              </group>
+            </group>
+            <group name="Peripheral settings">
+              <EzPort_operation_at_boot v="Enabled" />
+              <Low_power_boot v="Disabled" />
+            </group>
+          </boolgroup>
+        </list>
+      </group>
+      <list name="Shared CPU interrupts/resets" v="1">
+        <group name="CPU interrupts/resets">
+          <boolgroup name="Non-maskable interrupt" v="Enabled">
+            <Interrupt v="INT_NMI" />
+          </boolgroup>
+          <boolgroup name="Hard fault" v="Disabled" />
+          <boolgroup name="Supervisor call" v="Disabled" />
+          <boolgroup name="Pendable service" v="Disabled" />
+          <boolgroup name="MCG Loss of lock" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+    <Methods>
+      <list name="CPUCond" v="1">
+        <SetClockConfiguration v="don&amp;apos;t generate code" />
+        <GetClockConfiguration v="don&amp;apos;t generate code" />
+        <SetOperationMode v="don&amp;apos;t generate code" />
+        <EnableInt v="don&amp;apos;t generate code" />
+        <DisableInt v="don&amp;apos;t generate code" />
+        <OpenBackDoor v="don&amp;apos;t generate code" />
+        <MCGAutoTrim v="don&amp;apos;t generate code" />
+        <VLPModeEnable v="don&amp;apos;t generate code" />
+        <VLPModeDisable v="don&amp;apos;t generate code" />
+        <SystemReset v="don&amp;apos;t generate code" />
+      </list>
+    </Methods>
+    <Events>
+      <Event_module_name v="Events" />
+      <list name="EvntsShrdGrp" v="1">
+        <event name="OnReset" v="don&amp;apos;t generate code" />
+        <event name="OnNMI" v="generate code">
+          <Event_procedure_name v="Cpu_OnNMI" />
+        </event>
+        <event name="OnHardFault" v="don&amp;apos;t generate code" />
+        <event name="OnSupervisorCall" v="don&amp;apos;t generate code" />
+        <event name="OnPendableService" v="don&amp;apos;t generate code" />
+        <event name="OnLossOfLock" v="don&amp;apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="GNU C Compiler" />
+    <CompilerProperties>
+      <Compiler v="GNU C Compiler" />
+      <enumgroup name="Unhandled vectors" v="One handler for all">
+        <Unhandled_int_code>
+          <StrgList><![CDATA[/* This code can be changed using the CPU component property "Build Options / Unhandled int code" */
+PE_DEBUGHALT();
+]]></StrgList>
+        </Unhandled_int_code>
+      </enumgroup>
+      <boolgroup name="Generate debugger files" v="no" />
+      <group name="Startup">
+        <Add_startup_file v="yes" />
+      </group>
+      <boolgroup name="Generate linker file" v="yes">
+        <Stack_size v="1024" />
+        <Heap_size v="0" />
+        <Set_memory_segments_to_default v="Click to set default &amp;gt;" />
+        <Default_memory_for_interrupts v="INTERNAL FLASH" />
+        <Default_memory_for_code v="INTERNAL FLASH" />
+        <Default_memory_for_data v="INTERNAL RAM" />
+        <list name="ROM/RAM Areas" v="5">
+          <group name="MemoryArea0">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_interrupts" />
+              <Qualifier v="RX" />
+              <Address v="0" />
+              <Size v="408" />
+            </boolgroup>
+          </group>
+          <group name="MemoryArea1">
+            <boolgroup name="ROM/RAM Area" v="Disabled" />
+          </group>
+          <group name="MemoryArea2">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_text" />
+              <Qualifier v="RX" />
+              <Address v="1040" />
+              <Size v="1047536" />
+            </boolgroup>
+          </group>
+          <group name="MemoryArea3">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_data_1FFF0000" />
+              <Qualifier v="RW" />
+              <Address v="536805376" />
+              <Size v="65536" />
+            </boolgroup>
+          </group>
+          <group name="MemoryArea4">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="m_data" />
+              <Qualifier v="RW" />
+              <Address v="536870912" />
+              <Size v="196608" />
+            </boolgroup>
+          </group>
+        </list>
+      </boolgroup>
+    </CompilerProperties>
+  </CPU_Bean>
+  <Bean name="Pins1" type="PinSettings">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Pins1" />
+      <PinSettings_IP_Block v="PinSettings" />
+      <Processor v="MK64FN1M0LQ12" />
+      <list name="ProcessorSpecificItem" v="1">
+        <group name="Pin settings">
+          <group name="Routing">
+            <group name="Peripheral Type ADC">
+              <Custom_name v="ADC0" />
+              <group name="ADC0">
+                <DM0___Minus_channel_0 v="ADC0_DM0/ADC1_DM3" />
+                <DM1___Minus_channel_1 v="ADC0_DM1" />
+                <DM2___Minus_channel_2 v="&amp;lt;Automatic&amp;gt;" />
+                <DM3___Minus_channel_3 v="ADC1_DM0/ADC0_DM3" />
+                <DM26___Minus_channel_26 v="TempSensor_minus" />
+                <DM27___Minus_channel_27 v="Bandgap_minus" />
+                <DM29___Minus_channel_29 v="&amp;lt;Automatic&amp;gt;" />
+                <DP0___Plus_channel_0 v="ADC0_DP0/ADC1_DP3" />
+                <DP1___Plus_channel_1 v="ADC0_DP1" />
+                <DP2___Plus_channel_2 v="&amp;lt;Automatic&amp;gt;" />
+                <DP3___Plus_channel_3 v="ADC1_DP0/ADC0_DP3" />
+                <DP26___Plus_channel_26 v="TempSensor_plus" />
+                <DP27___Plus_channel_27 v="Bandgap_plus" />
+                <DP29___Plus_channel_29 v="&amp;lt;Automatic&amp;gt;" />
+                <SE0___Single_ended_channel_0 v="ADC0_DP0/ADC1_DP3" />
+                <SE1___Single_ended_channel_1 v="ADC0_DP1" />
+                <SE2___Single_ended_channel_2 v="&amp;lt;Automatic&amp;gt;" />
+                <SE3___Single_ended_channel_3 v="ADC1_DP0/ADC0_DP3" />
+                <SE8___Single_ended_channel_8 v="&amp;lt;Automatic&amp;gt;" />
+                <SE9___Single_ended_channel_9 v="&amp;lt;Automatic&amp;gt;" />
+                <SE10___Single_ended_channel_10 v="&amp;lt;Automatic&amp;gt;" />
+                <SE11___Single_ended_channel_11 v="&amp;lt;Automatic&amp;gt;" />
+                <SE12___Single_ended_channel_12 v="&amp;lt;Automatic&amp;gt;" />
+                <SE13___Single_ended_channel_13 v="&amp;lt;Automatic&amp;gt;" />
+                <SE14___Single_ended_channel_14 v="&amp;lt;Automatic&amp;gt;" />
+                <SE15___Single_ended_channel_15 v="&amp;lt;Automatic&amp;gt;" />
+                <SE16___Single_ended_channel_16 v="ADC0_SE16/CMP1_IN2/ADC0_SE21" />
+                <SE17___Single_ended_channel_17 v="&amp;lt;Automatic&amp;gt;" />
+                <SE18___Single_ended_channel_18 v="&amp;lt;Automatic&amp;gt;" />
+                <SE19___Single_ended_channel_19 v="ADC0_DM0/ADC1_DM3" />
+                <SE20___Single_ended_channel_20 v="ADC0_DM1" />
+                <SE21___Single_ended_channel_21 v="ADC0_SE16/CMP1_IN2/ADC0_SE21" />
+                <SE22___Single_ended_channel_22 v="ADC1_SE16/CMP2_IN2/ADC0_SE22" />
+                <SE23___Single_ended_channel_23 v="DAC0_OUT/CMP1_IN3/ADC0_SE23" />
+                <SE26___Single_ended_channel_26 v="TempSensor" />
+                <SE27___Single_ended_channel_27 v="Bandgap" />
+                <SE29___Single_ended_channel_29 v="&amp;lt;Automatic&amp;gt;" />
+                <SE30___Single_ended_channel_30 v="&amp;lt;Automatic&amp;gt;" />
+                <SE4b___Single_ended_channel_4b v="&amp;lt;Automatic&amp;gt;" />
+                <SE5b___Single_ended_channel_5b v="&amp;lt;Automatic&amp;gt;" />
+                <SE6b___Single_ended_channel_6b v="&amp;lt;Automatic&amp;gt;" />
+                <SE7b___Single_ended_channel_7b v="&amp;lt;Automatic&amp;gt;" />
+                <Trigger_A_input v="&amp;lt;Automatic&amp;gt;" />
+                <Trigger_B_input v="&amp;lt;Automatic&amp;gt;" />
+                <Voltage_reference_high v="&amp;lt;Automatic&amp;gt;" />
+                <Voltage_reference_low v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_ADC0 v="yes" />
+              <Custom_name v="ADC1" />
+              <group name="ADC1">
+                <DM0___Minus_channel_0 v="ADC1_DM0/ADC0_DM3" />
+                <DM1___Minus_channel_1 v="ADC1_DM1" />
+                <DM3___Minus_channel_3 v="ADC0_DM0/ADC1_DM3" />
+                <DM26___Minus_channel_26 v="TempSensor_minus" />
+                <DM27___Minus_channel_27 v="Bandgap_minus" />
+                <DM29___Minus_channel_29 v="&amp;lt;Automatic&amp;gt;" />
+                <DP0___Plus_channel_0 v="ADC1_DP0/ADC0_DP3" />
+                <DP1___Plus_channel_1 v="ADC1_DP1" />
+                <DP3___Plus_channel_3 v="ADC0_DP0/ADC1_DP3" />
+                <DP26___Plus_channel_26 v="TempSensor_plus" />
+                <DP27___Plus_channel_27 v="Bandgap_plus" />
+                <DP29___Plus_channel_29 v="&amp;lt;Automatic&amp;gt;" />
+                <SE0___Single_ended_channel_0 v="ADC1_DP0/ADC0_DP3" />
+                <SE1___Single_ended_channel_1 v="ADC1_DP1" />
+                <SE3___Single_ended_channel_3 v="ADC0_DP0/ADC1_DP3" />
+                <SE8___Single_ended_channel_8 v="&amp;lt;Automatic&amp;gt;" />
+                <SE9___Single_ended_channel_9 v="&amp;lt;Automatic&amp;gt;" />
+                <SE10___Single_ended_channel_10 v="&amp;lt;Automatic&amp;gt;" />
+                <SE11___Single_ended_channel_11 v="&amp;lt;Automatic&amp;gt;" />
+                <SE12___Single_ended_channel_12 v="&amp;lt;Automatic&amp;gt;" />
+                <SE13___Single_ended_channel_13 v="&amp;lt;Automatic&amp;gt;" />
+                <SE14___Single_ended_channel_14 v="&amp;lt;Automatic&amp;gt;" />
+                <SE15___Single_ended_channel_15 v="&amp;lt;Automatic&amp;gt;" />
+                <SE16___Single_ended_channel_16 v="ADC1_SE16/CMP2_IN2/ADC0_SE22" />
+                <SE17___Single_ended_channel_17 v="&amp;lt;Automatic&amp;gt;" />
+                <SE18___Single_ended_channel_18 v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+                <SE19___Single_ended_channel_19 v="ADC1_DM0/ADC0_DM3" />
+                <SE20___Single_ended_channel_20 v="ADC1_DM1" />
+                <SE23___Single_ended_channel_23 v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+                <SE26___Single_ended_channel_26 v="TempSensor" />
+                <SE27___Single_ended_channel_27 v="Bandgap" />
+                <SE29___Single_ended_channel_29 v="&amp;lt;Automatic&amp;gt;" />
+                <SE30___Single_ended_channel_30 v="&amp;lt;Automatic&amp;gt;" />
+                <SE4a___Single_ended_channel_4a v="&amp;lt;Automatic&amp;gt;" />
+                <SE5a___Single_ended_channel_5a v="&amp;lt;Automatic&amp;gt;" />
+                <SE6a___Single_ended_channel_6a v="&amp;lt;Automatic&amp;gt;" />
+                <SE7a___Single_ended_channel_7a v="&amp;lt;Automatic&amp;gt;" />
+                <SE4b___Single_ended_channel_4b v="&amp;lt;Automatic&amp;gt;" />
+                <SE5b___Single_ended_channel_5b v="&amp;lt;Automatic&amp;gt;" />
+                <SE6b___Single_ended_channel_6b v="&amp;lt;Automatic&amp;gt;" />
+                <SE7b___Single_ended_channel_7b v="&amp;lt;Automatic&amp;gt;" />
+                <Trigger_A_input v="&amp;lt;Automatic&amp;gt;" />
+                <Trigger_B_input v="&amp;lt;Automatic&amp;gt;" />
+                <Voltage_reference_high v="&amp;lt;Automatic&amp;gt;" />
+                <Voltage_reference_low v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_ADC1 v="yes" />
+            </group>
+            <group name="Peripheral Type AIPS">
+              <Custom_name v="AIPS0" />
+              <Custom_name v="AIPS1" />
+            </group>
+            <group name="Peripheral Type AXBS">
+              <Custom_name v="AXBS" />
+            </group>
+            <group name="Peripheral Type CAN">
+              <Custom_name v="CAN0" />
+              <group name="CAN0">
+                <CAN_receiver_input v="&amp;lt;Automatic&amp;gt;" />
+                <CAN_transmitter_output v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_CAN0 v="yes" />
+            </group>
+            <group name="Peripheral Type CAU">
+              <Custom_name v="CAU" />
+            </group>
+            <group name="Peripheral Type CMP">
+              <Custom_name v="CMP0" />
+              <group name="CMP0">
+                <IN0___Negative_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <IN1___Negative_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <IN2___Negative_input_2 v="&amp;lt;Automatic&amp;gt;" />
+                <IN3___Negative_input_3 v="&amp;lt;Automatic&amp;gt;" />
+                <IN4___Negative_input_4 v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+                <IN5___Negative_input_5 v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+                <IN6___Negative_input_6 v="Bandgap" />
+                <IN7___Negative_input_7 v="DAC6b0_Output" />
+                <OUT___Comparator_output v="&amp;lt;Automatic&amp;gt;" />
+                <IN0___Positive_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <IN1___Positive_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <IN2___Positive_input_2 v="&amp;lt;Automatic&amp;gt;" />
+                <IN3___Positive_input_3 v="&amp;lt;Automatic&amp;gt;" />
+                <IN4___Positive_input_4 v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+                <IN5___Positive_input_5 v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+                <IN6___Positive_input_6 v="Bandgap" />
+                <IN7___Positive_input_7 v="DAC6b0_Output" />
+                <Window_sample_input v="PDB0_PulseOut0" />
+              </group>
+              <Bool_CMP0 v="yes" />
+              <Custom_name v="CMP1" />
+              <group name="CMP1">
+                <IN0___Negative_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <IN1___Negative_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <IN2___Negative_input_2 v="ADC0_SE16/CMP1_IN2/ADC0_SE21" />
+                <IN3___Negative_input_3 v="DAC0_OUT/CMP1_IN3/ADC0_SE23" />
+                <IN5___Negative_input_5 v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+                <IN6___Negative_input_6 v="Bandgap" />
+                <IN7___Negative_input_7 v="DAC6b1_Output" />
+                <OUT___Comparator_output v="&amp;lt;Automatic&amp;gt;" />
+                <IN0___Positive_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <IN1___Positive_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <IN2___Positive_input_2 v="ADC0_SE16/CMP1_IN2/ADC0_SE21" />
+                <IN3___Positive_input_3 v="DAC0_OUT/CMP1_IN3/ADC0_SE23" />
+                <IN5___Positive_input_5 v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+                <IN6___Positive_input_6 v="Bandgap" />
+                <IN7___Positive_input_7 v="DAC6b1_Output" />
+                <Window_sample_input v="PDB0_PulseOut1" />
+              </group>
+              <Bool_CMP1 v="yes" />
+              <Custom_name v="CMP2" />
+              <group name="CMP2">
+                <IN0___Negative_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <IN1___Negative_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <IN2___Negative_input_2 v="ADC1_SE16/CMP2_IN2/ADC0_SE22" />
+                <IN3___Negative_input_3 v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+                <IN6___Negative_input_6 v="Bandgap" />
+                <IN7___Negative_input_7 v="DAC6b2_Output" />
+                <OUT___Comparator_output v="&amp;lt;Automatic&amp;gt;" />
+                <IN0___Positive_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <IN1___Positive_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <IN2___Positive_input_2 v="ADC1_SE16/CMP2_IN2/ADC0_SE22" />
+                <IN3___Positive_input_3 v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+                <IN6___Positive_input_6 v="Bandgap" />
+                <IN7___Positive_input_7 v="DAC6b2_Output" />
+                <Window_sample_input v="PDB0_PulseOut2" />
+              </group>
+              <Bool_CMP2 v="yes" />
+            </group>
+            <group name="Peripheral Type CMT">
+              <Custom_name v="CMT" />
+              <group name="CMT">
+                <CMT_infrared_output v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_CMT v="yes" />
+            </group>
+            <group name="Peripheral Type CRC">
+              <Custom_name v="CRC" />
+            </group>
+            <group name="Peripheral Type CoreDebug">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type DAC">
+              <Custom_name v="DAC0" />
+              <group name="DAC0">
+                <Output_pin v="DAC0_OUT/CMP1_IN3/ADC0_SE23" />
+                <Trigger_input v="PDB0_DAC0_Trigger" />
+              </group>
+              <Bool_DAC0 v="yes" />
+              <Custom_name v="DAC1" />
+              <group name="DAC1">
+                <Output_pin v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+                <Trigger_input v="PDB0_DAC1_Trigger" />
+              </group>
+              <Bool_DAC1 v="yes" />
+            </group>
+            <group name="Peripheral Type DMA">
+              <Custom_name v="DMA" />
+              <group name="DMA">
+                <DMA_channel_0_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_1_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_2_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_3_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_4_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_5_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_6_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_7_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_8_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_9_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_10_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_11_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_12_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_13_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_14_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_15_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_0_periodic_trigger_input v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_1_periodic_trigger_input v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_2_periodic_trigger_input v="&amp;lt;Automatic&amp;gt;" />
+                <DMA_channel_3_periodic_trigger_input v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_DMA v="yes" />
+            </group>
+            <group name="Peripheral Type DMAMUX">
+              <Custom_name v="DMAMUX" />
+            </group>
+            <group name="Peripheral Type DRY">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type DWT">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type ENET">
+              <Custom_name v="ENET" />
+              <group name="ENET">
+                <ENET_1588_timer_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_1588_timer_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_1588_timer_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_1588_timer_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_collision_detection v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_carrier_sense v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_management_data_clock v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_management_data_input_output v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_clock v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_data_0 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_data_1 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_data_2 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_data_3 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_data_valid v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_receive_error v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_clock v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_data_0 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_data_1 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_data_2 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_data_3 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_enable v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_MII_transmit_error v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_external_reference_clock v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_receive_data_valid v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_management_data_clock v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_management_data_input_output v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_receive_data_0 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_receive_data_1 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_receive_error v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_transmit_data_0 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_transmit_data_1 v="&amp;lt;Automatic&amp;gt;" />
+                <ENET_RMII_transmit_enable v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_ENET v="yes" />
+            </group>
+            <group name="Peripheral Type ETB">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type ETF">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type ETM">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type EWM">
+              <Custom_name v="EWM" />
+              <group name="EWM">
+                <EWM_input v="&amp;lt;Automatic&amp;gt;" />
+                <EWM_output v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_EWM v="yes" />
+            </group>
+            <group name="Peripheral Type FB">
+              <Custom_name v="FB" />
+              <group name="FB">
+                <FlexBus_address_bus_16 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_17 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_18 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_19 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_20 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_21 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_22 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_23 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_24 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_25 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_26 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_27 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_28 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_bus_29 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_1 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_2 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_3 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_4 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_5 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_6 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_7 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_8 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_9 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_10 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_11 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_12 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_13 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_14 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_15 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_16 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_17 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_18 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_19 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_20 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_21 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_22 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_23 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_24 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_25 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_26 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_27 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_28 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_29 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_30 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_data_bus_31 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_address_latch_enable v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_byte_15_8_enable v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_byte_23_16_enable v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_byte_31_24_enable v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_byte_7_0_enable v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_Clock_Output v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_chip_select_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_chip_select_1 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_chip_select_2 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_chip_select_3 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_chip_select_4 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_chip_select_5 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_output_enable v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_read_write v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_transfer_acknowledge v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_burst_transfer_indicator v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_transfer_start v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_transfer_size_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FlexBus_transfer_size_1 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_FB v="yes" />
+            </group>
+            <group name="Peripheral Type FMC">
+              <Custom_name v="FMC" />
+            </group>
+            <group name="Peripheral Type FPB">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type FTFE">
+              <Custom_name v="FTFE" />
+            </group>
+            <group name="Peripheral Type FTM">
+              <Custom_name v="FTM0" />
+              <group name="FTM0">
+                <FTM_channel_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_external_clock_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_2 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_3 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_trigger_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_trigger_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_trigger_input_2 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_FTM0 v="yes" />
+              <Custom_name v="FTM1" />
+              <group name="FTM1">
+                <FTM_channel_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_external_clock_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_2 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_quadrature_decoder_phase_A_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_quadrature_decoder_phase_B_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_trigger_input_2 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_FTM1 v="yes" />
+              <Custom_name v="FTM2" />
+              <group name="FTM2">
+                <FTM_channel_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_external_clock_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_2 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_quadrature_decoder_phase_A_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_quadrature_decoder_phase_B_input v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_FTM2 v="yes" />
+              <Custom_name v="FTM3" />
+              <group name="FTM3">
+                <FTM_channel_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_channel_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_external_clock_input v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <FTM_fault_input_2 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_FTM3 v="yes" />
+            </group>
+            <group name="Peripheral Type GPIO">
+              <Custom_name v="PTA" />
+              <group name="PTA">
+                <General_purpose_IO_pin_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_8 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_9 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_10 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_11 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_12 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_13 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_14 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_15 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_16 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_17 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_18 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_19 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_24 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_25 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_26 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_27 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_28 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_29 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_PTA v="yes" />
+              <Custom_name v="PTB" />
+              <group name="PTB">
+                <General_purpose_IO_pin_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_8 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_9 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_10 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_11 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_16 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_17 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_18 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_19 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_20 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_21 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_22 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_23 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_PTB v="yes" />
+              <Custom_name v="PTC" />
+              <group name="PTC">
+                <General_purpose_IO_pin_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_8 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_9 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_10 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_11 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_12 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_13 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_14 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_15 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_16 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_17 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_18 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_19 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_PTC v="yes" />
+              <Custom_name v="PTD" />
+              <group name="PTD">
+                <General_purpose_IO_pin_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_8 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_9 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_10 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_11 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_12 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_13 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_14 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_15 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_PTD v="yes" />
+              <Custom_name v="PTE" />
+              <group name="PTE">
+                <General_purpose_IO_pin_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_8 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_9 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_10 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_11 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_12 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_24 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_25 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_26 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_27 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <General_purpose_IO_pin_28 v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_PTE v="yes" />
+            </group>
+            <group name="Peripheral Type I2C">
+              <Custom_name v="I2C0" />
+              <group name="I2C0">
+                <I2C_Serial_Clock_Line v="&amp;lt;Automatic&amp;gt;" />
+                <I2C_Serial_Data_Line v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_I2C0 v="yes" />
+              <Custom_name v="I2C1" />
+              <group name="I2C1">
+                <I2C_Serial_Clock_Line v="&amp;lt;Automatic&amp;gt;" />
+                <I2C_Serial_Data_Line v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_I2C1 v="yes" />
+              <Custom_name v="I2C2" />
+              <group name="I2C2">
+                <I2C_Serial_Clock_Line v="&amp;lt;Automatic&amp;gt;" />
+                <I2C_Serial_Data_Line v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_I2C2 v="yes" />
+            </group>
+            <group name="Peripheral Type I2S">
+              <Custom_name v="I2S0" />
+              <group name="I2S0">
+                <I2S_master_clock v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_RX_bit_clock v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_RX_frame_sync v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_receive_data_0 v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_receive_data_1 v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_TX_bit_clock v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_TX_frame_sync v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_transmit_data_0 v="&amp;lt;Automatic&amp;gt;" />
+                <I2S_transmit_data_1 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_I2S0 v="yes" />
+            </group>
+            <group name="Peripheral Type ITM">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type JTAG">
+              <group name="JTAG">
+                <TCLK___Test_clock v="&amp;lt;Automatic&amp;gt;" />
+                <TDI___Test_data_input v="&amp;lt;Automatic&amp;gt;" />
+                <TDO___Test_data_output v="&amp;lt;Automatic&amp;gt;" />
+                <TMS___Test_mode_selection v="&amp;lt;Automatic&amp;gt;" />
+                <TRST___Reset v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_JTAG v="yes" />
+            </group>
+            <group name="Peripheral Type LLWU">
+              <Custom_name v="LLWU" />
+              <group name="LLWU">
+                <Low_leakage_wake_up_channel_0 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_1 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_2 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_3 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_4 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_5 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_6 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_7 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_8 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_9 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_10 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_11 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_12 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_13 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_14 v="&amp;lt;Automatic&amp;gt;" />
+                <Low_leakage_wake_up_channel_15 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_LLWU v="yes" />
+            </group>
+            <group name="Peripheral Type LPTMR">
+              <Custom_name v="LPTMR0" />
+              <group name="LPTMR0">
+                <LPTMR_pulse_counter_input_0 v="&amp;lt;Automatic&amp;gt;" />
+                <LPTMR_pulse_counter_input_1 v="&amp;lt;Automatic&amp;gt;" />
+                <LPTMR_pulse_counter_input_2 v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_LPTMR0 v="yes" />
+            </group>
+            <group name="Peripheral Type MCG">
+              <Custom_name v="MCG" />
+            </group>
+            <group name="Peripheral Type MCM">
+              <Custom_name v="MCM" />
+            </group>
+            <group name="Peripheral Type MPU">
+              <Custom_name v="MPU" />
+            </group>
+            <group name="Peripheral Type NV">
+              <Custom_name v="FTFE_FlashConfig" />
+            </group>
+            <group name="Peripheral Type NVIC">
+              <Custom_name v="NVIC" />
+            </group>
+            <group name="Peripheral Type OSC">
+              <Custom_name v="OSC" />
+              <group name="OSC">
+                <Oscillator_0_input v="&amp;lt;Automatic&amp;gt;" />
+                <Oscillator_0_output v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_OSC v="yes" />
+            </group>
+            <group name="Peripheral Type PDB">
+              <Custom_name v="PDB0" />
+              <group name="PDB0">
+                <DAC0_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <DAC1_trigger v="&amp;lt;Automatic&amp;gt;" />
+                <PDB_trigger_input v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_PDB0 v="yes" />
+            </group>
+            <group name="Peripheral Type PIT">
+              <Custom_name v="PIT" />
+            </group>
+            <group name="Peripheral Type PMC">
+              <Custom_name v="PMC" />
+            </group>
+            <group name="Peripheral Type PORT">
+              <Custom_name v="PORTA" />
+              <Custom_name v="PORTB" />
+              <Custom_name v="PORTC" />
+              <Custom_name v="PORTD" />
+              <Custom_name v="PORTE" />
+            </group>
+            <group name="Peripheral Type RCM">
+              <Custom_name v="RCM" />
+              <group name="RCM">
+                <Reset_input v="RESET_b" />
+              </group>
+              <Bool_RCM v="yes" />
+            </group>
+            <group name="Peripheral Type RFSYS">
+              <Custom_name v="RFSYS" />
+            </group>
+            <group name="Peripheral Type RFVBAT">
+              <Custom_name v="RFVBAT" />
+            </group>
+            <group name="Peripheral Type RNG">
+              <Custom_name v="RNG" />
+            </group>
+            <group name="Peripheral Type RTC">
+              <Custom_name v="RTC" />
+              <group name="RTC">
+                <RTC_oscillator_output v="&amp;lt;Automatic&amp;gt;" />
+                <RTC_oscillator_input v="EXTAL32" />
+                <RTC_VBAT_power_supply v="VBAT" />
+                <RTC_oscillator_output v="XTAL32" />
+              </group>
+              <Bool_RTC v="yes" />
+            </group>
+            <group name="Peripheral Type SCB">
+              <Custom_name v="SystemControl" />
+            </group>
+            <group name="Peripheral Type SDHC">
+              <Custom_name v="SDHC" />
+              <group name="SDHC">
+                <SDHC_clock_input v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_command_line v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_0 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_1 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_2 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_3 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_4 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_5 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_6 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_data_line_7 v="&amp;lt;Automatic&amp;gt;" />
+                <SDHC_card_clock v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_SDHC v="yes" />
+            </group>
+            <group name="Peripheral Type SIM">
+              <Custom_name v="SIM" />
+              <group name="SIM">
+                <Clock_generation_SIM_output v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_SIM v="yes" />
+            </group>
+            <group name="Peripheral Type SMC">
+              <Custom_name v="SMC" />
+            </group>
+            <group name="Peripheral Type SPI">
+              <Custom_name v="SPI0" />
+              <group name="SPI0">
+                <SPI_peripheral_chip_select_output__0_or_slave_select_input_ v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_1 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_2 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_3 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_4 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_5 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_chip_select_strobe v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_data_in v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_clock_output__input_in_slave_mode_ v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_data_out v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_SPI0 v="yes" />
+              <Custom_name v="SPI1" />
+              <group name="SPI1">
+                <SPI_peripheral_chip_select_output__0_or_slave_select_input_ v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_1 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_2 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_3 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_data_in v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_clock_output__input_in_slave_mode_ v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_data_out v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_SPI1 v="yes" />
+              <Custom_name v="SPI2" />
+              <group name="SPI2">
+                <SPI_peripheral_chip_select_output__0_or_slave_select_input_ v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_peripheral_chip_select_1 v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_data_in v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_clock_output__input_in_slave_mode_ v="&amp;lt;Automatic&amp;gt;" />
+                <Direction v="&amp;lt;Automatic&amp;gt;" />
+                <SPI_serial_data_out v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_SPI2 v="yes" />
+            </group>
+            <group name="Peripheral Type SysTick">
+              <Custom_name v="SysTick" />
+            </group>
+            <group name="Peripheral Type TPIU">
+              <EmptySection_DummyValue />
+            </group>
+            <group name="Peripheral Type UART">
+              <Custom_name v="UART0" />
+              <group name="UART0">
+                <UART_collision_detect v="&amp;lt;Automatic&amp;gt;" />
+                <UART_clear_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_request_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_receive_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_transmit_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_Tx_modulator_input v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_UART0 v="yes" />
+              <Custom_name v="UART1" />
+              <group name="UART1">
+                <UART_clear_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_request_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_receive_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_transmit_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_Tx_modulator_input v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_UART1 v="yes" />
+              <Custom_name v="UART2" />
+              <group name="UART2">
+                <UART_clear_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_request_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_receive_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_transmit_data v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_UART2 v="yes" />
+              <Custom_name v="UART3" />
+              <group name="UART3">
+                <UART_clear_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_request_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_receive_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_transmit_data v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_UART3 v="yes" />
+              <Custom_name v="UART4" />
+              <group name="UART4">
+                <UART_clear_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_request_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_receive_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_transmit_data v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_UART4 v="yes" />
+              <Custom_name v="UART5" />
+              <group name="UART5">
+                <UART_clear_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_request_to_send v="&amp;lt;Automatic&amp;gt;" />
+                <UART_receive_data v="&amp;lt;Automatic&amp;gt;" />
+                <UART_transmit_data v="&amp;lt;Automatic&amp;gt;" />
+              </group>
+              <Bool_UART5 v="yes" />
+            </group>
+            <group name="Peripheral Type USB">
+              <Custom_name v="USB0" />
+              <group name="USB0">
+                <USB_alternate_clock v="&amp;lt;Automatic&amp;gt;" />
+                <USB_data_minus v="USB0_DM" />
+                <USB_data_plus v="USB0_DP" />
+                <USB_start_of_frame v="&amp;lt;Automatic&amp;gt;" />
+                <USB_regulator_output_voltage v="VOUT33" />
+                <USB_unregulated_power_supply v="VREGIN" />
+              </group>
+              <Bool_USB0 v="yes" />
+            </group>
+            <group name="Peripheral Type USBDCD">
+              <Custom_name v="USBDCD" />
+              <group name="USBDCD">
+                <USB_data_minus v="USB0_DM" />
+                <USB_data_plus v="USB0_DP" />
+              </group>
+              <Bool_USBDCD v="yes" />
+            </group>
+            <group name="Peripheral Type VREF">
+              <Custom_name v="VREF" />
+              <group name="VREF">
+                <Voltage_reference_output v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+              </group>
+              <Bool_VREF v="yes" />
+            </group>
+            <group name="Peripheral Type WDOG">
+              <Custom_name v="WDOG" />
+            </group>
+            <group name="Non-peripheral pins">
+              <TRACE_CLKOUT v="&amp;lt;Automatic&amp;gt;" />
+              <TRACE_D3 v="&amp;lt;Automatic&amp;gt;" />
+              <TRACE_D2 v="&amp;lt;Automatic&amp;gt;" />
+              <TRACE_D1 v="&amp;lt;Automatic&amp;gt;" />
+              <VCC v="&amp;lt;Automatic&amp;gt;" />
+              <GND v="&amp;lt;Automatic&amp;gt;" />
+              <TRACE_D0 v="&amp;lt;Automatic&amp;gt;" />
+              <TRACE_SWO v="&amp;lt;Automatic&amp;gt;" />
+              <NMI v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+          </group>
+          <group name="Electrical properties">
+            <group name="Pin 1: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT">
+              <Custom_name__Signal_name v="ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 2: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN">
+              <Custom_name__Signal_name v="ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 3: ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2">
+              <Custom_name__Signal_name v="ADC0_DP2/ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK/TRACE_D2" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 4: ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT">
+              <Custom_name__Signal_name v="ADC0_DM2/ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/TRACE_D1/SPI1_SOUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 5: VDD5">
+              <Custom_name__Signal_name v="VDD5" />
+            </group>
+            <group name="Pin 6: VSS6">
+              <Custom_name__Signal_name v="VSS6" />
+            </group>
+            <group name="Pin 7: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0">
+              <Custom_name__Signal_name v="PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3/TRACE_D0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 8: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0">
+              <Custom_name__Signal_name v="PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2/FTM3_CH0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 9: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT">
+              <Custom_name__Signal_name v="PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/FTM3_CH1/USB_SOF_OUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 10: PTE7/UART3_RTS_b/I2S0_RXD0/FTM3_CH2">
+              <Custom_name__Signal_name v="PTE7/UART3_RTS_b/I2S0_RXD0/FTM3_CH2" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 11: PTE8/I2S0_RXD1/UART5_TX/I2S0_RX_FS/FTM3_CH3">
+              <Custom_name__Signal_name v="PTE8/I2S0_RXD1/UART5_TX/I2S0_RX_FS/FTM3_CH3" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 12: PTE9/I2S0_TXD1/UART5_RX/I2S0_RX_BCLK/FTM3_CH4">
+              <Custom_name__Signal_name v="PTE9/I2S0_TXD1/UART5_RX/I2S0_RX_BCLK/FTM3_CH4" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 13: PTE10/UART5_CTS_b/I2S0_TXD0/FTM3_CH5">
+              <Custom_name__Signal_name v="PTE10/UART5_CTS_b/I2S0_TXD0/FTM3_CH5" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 14: PTE11/UART5_RTS_b/I2S0_TX_FS/FTM3_CH6">
+              <Custom_name__Signal_name v="PTE11/UART5_RTS_b/I2S0_TX_FS/FTM3_CH6" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 15: PTE12/I2S0_TX_BCLK/FTM3_CH7">
+              <Custom_name__Signal_name v="PTE12/I2S0_TX_BCLK/FTM3_CH7" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 16: VDD16">
+              <Custom_name__Signal_name v="VDD16" />
+            </group>
+            <group name="Pin 17: VSS17">
+              <Custom_name__Signal_name v="VSS17" />
+            </group>
+            <group name="Pin 18: VSS18">
+              <Custom_name__Signal_name v="VSS18" />
+            </group>
+            <group name="Pin 19: USB0_DP">
+              <Custom_name__Signal_name v="USB0_DP" />
+            </group>
+            <group name="Pin 20: USB0_DM">
+              <Custom_name__Signal_name v="USB0_DM" />
+            </group>
+            <group name="Pin 21: VOUT33">
+              <Custom_name__Signal_name v="VOUT33" />
+            </group>
+            <group name="Pin 22: VREGIN">
+              <Custom_name__Signal_name v="VREGIN" />
+            </group>
+            <group name="Pin 23: ADC0_DP1">
+              <Custom_name__Signal_name v="ADC0_DP1" />
+            </group>
+            <group name="Pin 24: ADC0_DM1">
+              <Custom_name__Signal_name v="ADC0_DM1" />
+            </group>
+            <group name="Pin 25: ADC1_DP1">
+              <Custom_name__Signal_name v="ADC1_DP1" />
+            </group>
+            <group name="Pin 26: ADC1_DM1">
+              <Custom_name__Signal_name v="ADC1_DM1" />
+            </group>
+            <group name="Pin 27: ADC0_DP0/ADC1_DP3">
+              <Custom_name__Signal_name v="ADC0_DP0/ADC1_DP3" />
+            </group>
+            <group name="Pin 28: ADC0_DM0/ADC1_DM3">
+              <Custom_name__Signal_name v="ADC0_DM0/ADC1_DM3" />
+            </group>
+            <group name="Pin 29: ADC1_DP0/ADC0_DP3">
+              <Custom_name__Signal_name v="ADC1_DP0/ADC0_DP3" />
+            </group>
+            <group name="Pin 30: ADC1_DM0/ADC0_DM3">
+              <Custom_name__Signal_name v="ADC1_DM0/ADC0_DM3" />
+            </group>
+            <group name="Pin 31: VDDA">
+              <Custom_name__Signal_name v="VDDA" />
+            </group>
+            <group name="Pin 32: VREFH">
+              <Custom_name__Signal_name v="VREFH" />
+            </group>
+            <group name="Pin 33: VREFL">
+              <Custom_name__Signal_name v="VREFL" />
+            </group>
+            <group name="Pin 34: VSSA">
+              <Custom_name__Signal_name v="VSSA" />
+            </group>
+            <group name="Pin 35: ADC1_SE16/CMP2_IN2/ADC0_SE22">
+              <Custom_name__Signal_name v="ADC1_SE16/CMP2_IN2/ADC0_SE22" />
+            </group>
+            <group name="Pin 36: ADC0_SE16/CMP1_IN2/ADC0_SE21">
+              <Custom_name__Signal_name v="ADC0_SE16/CMP1_IN2/ADC0_SE21" />
+            </group>
+            <group name="Pin 37: VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18">
+              <Custom_name__Signal_name v="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18" />
+            </group>
+            <group name="Pin 38: DAC0_OUT/CMP1_IN3/ADC0_SE23">
+              <Custom_name__Signal_name v="DAC0_OUT/CMP1_IN3/ADC0_SE23" />
+            </group>
+            <group name="Pin 39: DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23">
+              <Custom_name__Signal_name v="DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23" />
+            </group>
+            <group name="Pin 40: XTAL32">
+              <Custom_name__Signal_name v="XTAL32" />
+            </group>
+            <group name="Pin 41: EXTAL32">
+              <Custom_name__Signal_name v="EXTAL32" />
+            </group>
+            <group name="Pin 42: VBAT">
+              <Custom_name__Signal_name v="VBAT" />
+            </group>
+            <group name="Pin 43: VDD50">
+              <Custom_name__Signal_name v="VDD50" />
+            </group>
+            <group name="Pin 44: VSS51">
+              <Custom_name__Signal_name v="VSS51" />
+            </group>
+            <group name="Pin 45: ADC0_SE17/PTE24/UART4_TX/I2C0_SCL/EWM_OUT_b">
+              <Custom_name__Signal_name v="ADC0_SE17/PTE24/UART4_TX/I2C0_SCL/EWM_OUT_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 46: ADC0_SE18/PTE25/UART4_RX/I2C0_SDA/EWM_IN">
+              <Custom_name__Signal_name v="ADC0_SE18/PTE25/UART4_RX/I2C0_SDA/EWM_IN" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 47: PTE26/ENET_1588_CLKIN/UART4_CTS_b/RTC_CLKOUT/USB_CLKIN">
+              <Custom_name__Signal_name v="PTE26/ENET_1588_CLKIN/UART4_CTS_b/RTC_CLKOUT/USB_CLKIN" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 48: PTE27/UART4_RTS_b">
+              <Custom_name__Signal_name v="PTE27/UART4_RTS_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 49: PTE28">
+              <Custom_name__Signal_name v="PTE28" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 50: PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK">
+              <Custom_name__Signal_name v="PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 51: PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI">
+              <Custom_name__Signal_name v="PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 52: PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO">
+              <Custom_name__Signal_name v="PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 53: PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO">
+              <Custom_name__Signal_name v="PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 54: PTA4/LLWU_P3/FTM0_CH1/NMI_b/EZP_CS_b">
+              <Custom_name__Signal_name v="PTA4/LLWU_P3/FTM0_CH1/NMI_b/EZP_CS_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 55: PTA5/USB_CLKIN/FTM0_CH2/RMII0_RXER/MII0_RXER/CMP2_OUT/I2S0_TX_BCLK/JTAG_TRST_b">
+              <Custom_name__Signal_name v="PTA5/USB_CLKIN/FTM0_CH2/RMII0_RXER/MII0_RXER/CMP2_OUT/I2S0_TX_BCLK/JTAG_TRST_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 56: VDD63">
+              <Custom_name__Signal_name v="VDD63" />
+            </group>
+            <group name="Pin 57: VSS64">
+              <Custom_name__Signal_name v="VSS64" />
+            </group>
+            <group name="Pin 58: PTA6/FTM0_CH3/CLKOUT/TRACE_CLKOUT">
+              <Custom_name__Signal_name v="PTA6/FTM0_CH3/CLKOUT/TRACE_CLKOUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 59: ADC0_SE10/PTA7/FTM0_CH4/TRACE_D3">
+              <Custom_name__Signal_name v="ADC0_SE10/PTA7/FTM0_CH4/TRACE_D3" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 60: ADC0_SE11/PTA8/FTM1_CH0/FTM1_QD_PHA/TRACE_D2">
+              <Custom_name__Signal_name v="ADC0_SE11/PTA8/FTM1_CH0/FTM1_QD_PHA/TRACE_D2" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 61: PTA9/FTM1_CH1/MII0_RXD3/FTM1_QD_PHB/TRACE_D1">
+              <Custom_name__Signal_name v="PTA9/FTM1_CH1/MII0_RXD3/FTM1_QD_PHB/TRACE_D1" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 62: PTA10/FTM2_CH0/MII0_RXD2/FTM2_QD_PHA/TRACE_D0">
+              <Custom_name__Signal_name v="PTA10/FTM2_CH0/MII0_RXD2/FTM2_QD_PHA/TRACE_D0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 63: PTA11/FTM2_CH1/MII0_RXCLK/I2C2_SDA/FTM2_QD_PHB">
+              <Custom_name__Signal_name v="PTA11/FTM2_CH1/MII0_RXCLK/I2C2_SDA/FTM2_QD_PHB" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 64: CMP2_IN0/PTA12/CAN0_TX/FTM1_CH0/RMII0_RXD1/MII0_RXD1/I2C2_SCL/I2S0_TXD0/FTM1_QD_PHA">
+              <Custom_name__Signal_name v="CMP2_IN0/PTA12/CAN0_TX/FTM1_CH0/RMII0_RXD1/MII0_RXD1/I2C2_SCL/I2S0_TXD0/FTM1_QD_PHA" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 65: CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/RMII0_RXD0/MII0_RXD0/I2C2_SDA/I2S0_TX_FS/FTM1_QD_PHB">
+              <Custom_name__Signal_name v="CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/RMII0_RXD0/MII0_RXD0/I2C2_SDA/I2S0_TX_FS/FTM1_QD_PHB" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 66: PTA14/SPI0_PCS0/UART0_TX/RMII0_CRS_DV/MII0_RXDV/I2C2_SCL/I2S0_RX_BCLK/I2S0_TXD1">
+              <Custom_name__Signal_name v="PTA14/SPI0_PCS0/UART0_TX/RMII0_CRS_DV/MII0_RXDV/I2C2_SCL/I2S0_RX_BCLK/I2S0_TXD1" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 67: PTA15/SPI0_SCK/UART0_RX/RMII0_TXEN/MII0_TXEN/I2S0_RXD0">
+              <Custom_name__Signal_name v="PTA15/SPI0_SCK/UART0_RX/RMII0_TXEN/MII0_TXEN/I2S0_RXD0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 68: PTA16/SPI0_SOUT/UART0_CTS_b/UART0_COL_b/RMII0_TXD0/MII0_TXD0/I2S0_RX_FS/I2S0_RXD1">
+              <Custom_name__Signal_name v="PTA16/SPI0_SOUT/UART0_CTS_b/UART0_COL_b/RMII0_TXD0/MII0_TXD0/I2S0_RX_FS/I2S0_RXD1" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 69: ADC1_SE17/PTA17/SPI0_SIN/UART0_RTS_b/RMII0_TXD1/MII0_TXD1/I2S0_MCLK">
+              <Custom_name__Signal_name v="ADC1_SE17/PTA17/SPI0_SIN/UART0_RTS_b/RMII0_TXD1/MII0_TXD1/I2S0_MCLK" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 70: VDD78">
+              <Custom_name__Signal_name v="VDD78" />
+            </group>
+            <group name="Pin 71: VSS79">
+              <Custom_name__Signal_name v="VSS79" />
+            </group>
+            <group name="Pin 72: EXTAL0/PTA18/FTM0_FLT2/FTM_CLKIN0">
+              <Custom_name__Signal_name v="EXTAL0/PTA18/FTM0_FLT2/FTM_CLKIN0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 73: XTAL0/PTA19/FTM1_FLT0/FTM_CLKIN1/LPTMR0_ALT1">
+              <Custom_name__Signal_name v="XTAL0/PTA19/FTM1_FLT0/FTM_CLKIN1/LPTMR0_ALT1" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 74: RESET_b">
+              <Custom_name__Signal_name v="RESET_b" />
+            </group>
+            <group name="Pin 75: PTA24/MII0_TXD2/FB_A29">
+              <Custom_name__Signal_name v="PTA24/MII0_TXD2/FB_A29" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 76: PTA25/MII0_TXCLK/FB_A28">
+              <Custom_name__Signal_name v="PTA25/MII0_TXCLK/FB_A28" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 77: PTA26/MII0_TXD3/FB_A27">
+              <Custom_name__Signal_name v="PTA26/MII0_TXD3/FB_A27" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 78: PTA27/MII0_CRS/FB_A26">
+              <Custom_name__Signal_name v="PTA27/MII0_CRS/FB_A26" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 79: PTA28/MII0_TXER/FB_A25">
+              <Custom_name__Signal_name v="PTA28/MII0_TXER/FB_A25" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 80: PTA29/MII0_COL/FB_A24">
+              <Custom_name__Signal_name v="PTA29/MII0_COL/FB_A24" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 81: ADC0_SE8/ADC1_SE8/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/RMII0_MDIO/MII0_MDIO/FTM1_QD_PHA">
+              <Custom_name__Signal_name v="ADC0_SE8/ADC1_SE8/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/RMII0_MDIO/MII0_MDIO/FTM1_QD_PHA" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 82: ADC0_SE9/ADC1_SE9/PTB1/I2C0_SDA/FTM1_CH1/RMII0_MDC/MII0_MDC/FTM1_QD_PHB">
+              <Custom_name__Signal_name v="ADC0_SE9/ADC1_SE9/PTB1/I2C0_SDA/FTM1_CH1/RMII0_MDC/MII0_MDC/FTM1_QD_PHB" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 83: ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3">
+              <Custom_name__Signal_name v="ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 84: ADC0_SE13/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/ENET0_1588_TMR1/FTM0_FLT0">
+              <Custom_name__Signal_name v="ADC0_SE13/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/ENET0_1588_TMR1/FTM0_FLT0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 85: ADC1_SE10/PTB4/ENET0_1588_TMR2/FTM1_FLT0">
+              <Custom_name__Signal_name v="ADC1_SE10/PTB4/ENET0_1588_TMR2/FTM1_FLT0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 86: ADC1_SE11/PTB5/ENET0_1588_TMR3/FTM2_FLT0">
+              <Custom_name__Signal_name v="ADC1_SE11/PTB5/ENET0_1588_TMR3/FTM2_FLT0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 87: ADC1_SE12/PTB6/FB_AD23">
+              <Custom_name__Signal_name v="ADC1_SE12/PTB6/FB_AD23" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 88: ADC1_SE13/PTB7/FB_AD22">
+              <Custom_name__Signal_name v="ADC1_SE13/PTB7/FB_AD22" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 89: PTB8/UART3_RTS_b/FB_AD21">
+              <Custom_name__Signal_name v="PTB8/UART3_RTS_b/FB_AD21" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 90: PTB9/SPI1_PCS1/UART3_CTS_b/FB_AD20">
+              <Custom_name__Signal_name v="PTB9/SPI1_PCS1/UART3_CTS_b/FB_AD20" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 91: ADC1_SE14/PTB10/SPI1_PCS0/UART3_RX/FB_AD19/FTM0_FLT1">
+              <Custom_name__Signal_name v="ADC1_SE14/PTB10/SPI1_PCS0/UART3_RX/FB_AD19/FTM0_FLT1" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 92: ADC1_SE15/PTB11/SPI1_SCK/UART3_TX/FB_AD18/FTM0_FLT2">
+              <Custom_name__Signal_name v="ADC1_SE15/PTB11/SPI1_SCK/UART3_TX/FB_AD18/FTM0_FLT2" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 93: VSS103">
+              <Custom_name__Signal_name v="VSS103" />
+            </group>
+            <group name="Pin 94: VDD104">
+              <Custom_name__Signal_name v="VDD104" />
+            </group>
+            <group name="Pin 95: PTB16/SPI1_SOUT/UART0_RX/FTM_CLKIN0/FB_AD17/EWM_IN">
+              <Custom_name__Signal_name v="PTB16/SPI1_SOUT/UART0_RX/FTM_CLKIN0/FB_AD17/EWM_IN" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 96: PTB17/SPI1_SIN/UART0_TX/FTM_CLKIN1/FB_AD16/EWM_OUT_b">
+              <Custom_name__Signal_name v="PTB17/SPI1_SIN/UART0_TX/FTM_CLKIN1/FB_AD16/EWM_OUT_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 97: PTB18/CAN0_TX/FTM2_CH0/I2S0_TX_BCLK/FB_AD15/FTM2_QD_PHA">
+              <Custom_name__Signal_name v="PTB18/CAN0_TX/FTM2_CH0/I2S0_TX_BCLK/FB_AD15/FTM2_QD_PHA" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 98: PTB19/CAN0_RX/FTM2_CH1/I2S0_TX_FS/FB_OE_b/FTM2_QD_PHB">
+              <Custom_name__Signal_name v="PTB19/CAN0_RX/FTM2_CH1/I2S0_TX_FS/FB_OE_b/FTM2_QD_PHB" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 99: PTB20/SPI2_PCS0/FB_AD31/CMP0_OUT">
+              <Custom_name__Signal_name v="PTB20/SPI2_PCS0/FB_AD31/CMP0_OUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 100: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT">
+              <Custom_name__Signal_name v="PTB21/SPI2_SCK/FB_AD30/CMP1_OUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 101: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT">
+              <Custom_name__Signal_name v="PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 102: PTB23/SPI2_SIN/SPI0_PCS5/FB_AD28">
+              <Custom_name__Signal_name v="PTB23/SPI2_SIN/SPI0_PCS5/FB_AD28" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 103: ADC0_SE14/PTC0/SPI0_PCS4/PDB0_EXTRG/USB_SOF_OUT/FB_AD14/I2S0_TXD1">
+              <Custom_name__Signal_name v="ADC0_SE14/PTC0/SPI0_PCS4/PDB0_EXTRG/USB_SOF_OUT/FB_AD14/I2S0_TXD1" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 104: ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0">
+              <Custom_name__Signal_name v="ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 105: ADC0_SE4b/CMP1_IN0/PTC2/SPI0_PCS2/UART1_CTS_b/FTM0_CH1/FB_AD12/I2S0_TX_FS">
+              <Custom_name__Signal_name v="ADC0_SE4b/CMP1_IN0/PTC2/SPI0_PCS2/UART1_CTS_b/FTM0_CH1/FB_AD12/I2S0_TX_FS" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 106: CMP1_IN1/PTC3/LLWU_P7/SPI0_PCS1/UART1_RX/FTM0_CH2/CLKOUT/I2S0_TX_BCLK">
+              <Custom_name__Signal_name v="CMP1_IN1/PTC3/LLWU_P7/SPI0_PCS1/UART1_RX/FTM0_CH2/CLKOUT/I2S0_TX_BCLK" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 107: VSS117">
+              <Custom_name__Signal_name v="VSS117" />
+            </group>
+            <group name="Pin 108: VDD118">
+              <Custom_name__Signal_name v="VDD118" />
+            </group>
+            <group name="Pin 109: PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/FB_AD11/CMP1_OUT">
+              <Custom_name__Signal_name v="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/FB_AD11/CMP1_OUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 110: PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/I2S0_RXD0/FB_AD10/CMP0_OUT/FTM0_CH2">
+              <Custom_name__Signal_name v="PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/I2S0_RXD0/FB_AD10/CMP0_OUT/FTM0_CH2" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 111: CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK">
+              <Custom_name__Signal_name v="CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 112: CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8">
+              <Custom_name__Signal_name v="CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 113: ADC1_SE4b/CMP0_IN2/PTC8/FTM3_CH4/I2S0_MCLK/FB_AD7">
+              <Custom_name__Signal_name v="ADC1_SE4b/CMP0_IN2/PTC8/FTM3_CH4/I2S0_MCLK/FB_AD7" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 114: ADC1_SE5b/CMP0_IN3/PTC9/FTM3_CH5/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0">
+              <Custom_name__Signal_name v="ADC1_SE5b/CMP0_IN3/PTC9/FTM3_CH5/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 115: ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5">
+              <Custom_name__Signal_name v="ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 116: ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/FTM3_CH7/I2S0_RXD1/FB_RW_b">
+              <Custom_name__Signal_name v="ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/FTM3_CH7/I2S0_RXD1/FB_RW_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 117: PTC12/UART4_RTS_b/FB_AD27/FTM3_FLT0">
+              <Custom_name__Signal_name v="PTC12/UART4_RTS_b/FB_AD27/FTM3_FLT0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 118: PTC13/UART4_CTS_b/FB_AD26">
+              <Custom_name__Signal_name v="PTC13/UART4_CTS_b/FB_AD26" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 119: PTC14/UART4_RX/FB_AD25">
+              <Custom_name__Signal_name v="PTC14/UART4_RX/FB_AD25" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 120: PTC15/UART4_TX/FB_AD24">
+              <Custom_name__Signal_name v="PTC15/UART4_TX/FB_AD24" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 121: VSS131">
+              <Custom_name__Signal_name v="VSS131" />
+            </group>
+            <group name="Pin 122: VDD132">
+              <Custom_name__Signal_name v="VDD132" />
+            </group>
+            <group name="Pin 123: PTC16/UART3_RX/ENET0_1588_TMR0/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b">
+              <Custom_name__Signal_name v="PTC16/UART3_RX/ENET0_1588_TMR0/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 124: PTC17/UART3_TX/ENET0_1588_TMR1/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b">
+              <Custom_name__Signal_name v="PTC17/UART3_TX/ENET0_1588_TMR1/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 125: PTC18/UART3_RTS_b/ENET0_1588_TMR2/FB_TBST_b/FB_CS2_b/FB_BE15_8_BLS23_16_b">
+              <Custom_name__Signal_name v="PTC18/UART3_RTS_b/ENET0_1588_TMR2/FB_TBST_b/FB_CS2_b/FB_BE15_8_BLS23_16_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 126: PTC19/UART3_CTS_b/ENET0_1588_TMR3/FB_CS3_b/FB_BE7_0_BLS31_24_b/FB_TA_b">
+              <Custom_name__Signal_name v="PTC19/UART3_CTS_b/ENET0_1588_TMR3/FB_CS3_b/FB_BE7_0_BLS31_24_b/FB_TA_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 127: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b">
+              <Custom_name__Signal_name v="PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 128: ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FTM3_CH1/FB_CS0_b">
+              <Custom_name__Signal_name v="ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FTM3_CH1/FB_CS0_b" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 129: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FTM3_CH2/FB_AD4/I2C0_SCL">
+              <Custom_name__Signal_name v="PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FTM3_CH2/FB_AD4/I2C0_SCL" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 130: PTD3/SPI0_SIN/UART2_TX/FTM3_CH3/FB_AD3/I2C0_SDA">
+              <Custom_name__Signal_name v="PTD3/SPI0_SIN/UART2_TX/FTM3_CH3/FB_AD3/I2C0_SDA" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 131: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN/SPI1_PCS0">
+              <Custom_name__Signal_name v="PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN/SPI1_PCS0" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 132: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK">
+              <Custom_name__Signal_name v="ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 133: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT">
+              <Custom_name__Signal_name v="ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 134: VSS144">
+              <Custom_name__Signal_name v="VSS144" />
+            </group>
+            <group name="Pin 135: VDD145">
+              <Custom_name__Signal_name v="VDD145" />
+            </group>
+            <group name="Pin 136: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN">
+              <Custom_name__Signal_name v="PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 137: PTD8/I2C0_SCL/UART5_RX/FB_A16">
+              <Custom_name__Signal_name v="PTD8/I2C0_SCL/UART5_RX/FB_A16" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 138: PTD9/I2C0_SDA/UART5_TX/FB_A17">
+              <Custom_name__Signal_name v="PTD9/I2C0_SDA/UART5_TX/FB_A17" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 139: PTD10/UART5_RTS_b/FB_A18">
+              <Custom_name__Signal_name v="PTD10/UART5_RTS_b/FB_A18" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 140: PTD11/SPI2_PCS0/UART5_CTS_b/SDHC0_CLKIN/FB_A19">
+              <Custom_name__Signal_name v="PTD11/SPI2_PCS0/UART5_CTS_b/SDHC0_CLKIN/FB_A19" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 141: PTD12/SPI2_SCK/FTM3_FLT0/SDHC0_D4/FB_A20">
+              <Custom_name__Signal_name v="PTD12/SPI2_SCK/FTM3_FLT0/SDHC0_D4/FB_A20" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 142: PTD13/SPI2_SOUT/SDHC0_D5/FB_A21">
+              <Custom_name__Signal_name v="PTD13/SPI2_SOUT/SDHC0_D5/FB_A21" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 143: PTD14/SPI2_SIN/SDHC0_D6/FB_A22">
+              <Custom_name__Signal_name v="PTD14/SPI2_SIN/SDHC0_D6/FB_A22" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+            <group name="Pin 144: PTD15/SPI2_PCS1/SDHC0_D7/FB_A23">
+              <Custom_name__Signal_name v="PTD15/SPI2_PCS1/SDHC0_D7/FB_A23" />
+              <Slew_rate v="&amp;lt;Automatic&amp;gt;" />
+              <Open_drain v="&amp;lt;Automatic&amp;gt;" />
+              <Drive_strength v="&amp;lt;Automatic&amp;gt;" />
+              <Passive_filter v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_select v="&amp;lt;Automatic&amp;gt;" />
+              <Pull_enable v="&amp;lt;Automatic&amp;gt;" />
+            </group>
+          </group>
+        </group>
+      </list>
+    </Properties>
+    <Methods>
+      <list name="ProcessorSpecificMethods" v="1">
+        <Init v="don&amp;apos;t generate code" />
+      </list>
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+</PE_PROJECT_SETTINGS_DOCUMENTATION>
+
